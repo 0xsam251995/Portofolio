@@ -1,178 +1,178 @@
-/* --- MODERN PALETTE & VARIABLES --- */
-:root {
-  --primary-color: #4f46e5; /* Indigo Modern */
-  --bg-color: #f8fafc;
-  --text-color: #1e293b;
-  --nav-bg: rgba(255, 255, 255, 0.8);
-  --card-bg: #ffffff;
-  --border-color: #e2e8f0;
-  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-}
-
-/* --- DARK MODE REFINED --- */
-body.dark {
-  --bg-color: #0f172a; /* Slate Dark */
-  --text-color: #f1f5f9;
-  --nav-bg: rgba(15, 23, 42, 0.8);
-  --card-bg: #1e293b;
-  --border-color: #334155;
-  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-}
-
-/* --- CORE STYLES --- */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  transition: all 0.4s ease;
-  margin: 0;
-  line-height: 1.7;
-}
-
-/* --- GLASSMORPHISM NAVBAR --- */
-.navbar {
-  background-color: var(--nav-bg);
-  backdrop-filter: blur(10px); /* Efek blur di belakang nav */
-  padding: 1rem 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary-color);
-  letter-spacing: -1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--primary-color);
-}
-
-/* --- LAYOUT & SECTION --- */
-.container, .content {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  letter-spacing: -0.025em;
-}
-
-h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-
-/* --- PROJECT CARDS REFINED --- */
-.project {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
-}
-
-.project h3 {
-  margin-top: 0;
-  color: var(--primary-color);
-}
-
-/* --- FLOATING DARK MODE BUTTON --- */
-.dark-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  background: var(--card-bg);
-  color: var(--text-color);
-  box-shadow: var(--shadow);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark-btn:active {
-  transform: scale(0.95);
-}
-
-/* --- LIST STYLING --- */
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-}/* --- FOOTER STYLES --- */
-.footer {
-  margin-top: 50px;
-  padding: 40px 20px;
-  border-top: 1px solid var(--border-color);
-  background-color: var(--nav-bg); /* Mengikuti warna navbar */
-  text-align: center;
-  transition: all 0.4s ease;
-}
-
-.footer-content p {
-  margin-bottom: 20px;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.social-links a {
-  color: var(--text-color); /* OTOMATIS BERUBAH: Putih di Dark, Hitam di Light */
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-/* Efek Hover: Ikon akan berubah warna ke warna aksen saat disentuh */
-.social-links a:hover {
-  color: var(--primary-color);
-  transform: translateY(-5px);
-}
-
-/* Responsif untuk layar kecil */
-@media (max-width: 600px) {
-  .social-links {
-    gap: 15px;
+  /* --- MODERN PALETTE & VARIABLES --- */
+  :root {
+    --primary-color: #4f46e5; /* Indigo Modern */
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
   }
-}
-.fa-instagram:hover { color: #E1306C; }
-.fa-github:hover { color: #333; }
+
+  /* --- DARK MODE REFINED --- */
+  body.dark {
+    --bg-color: #0f172a; /* Slate Dark */
+    --text-color: #f1f5f9;
+    --nav-bg: rgba(15, 23, 42, 0.8);
+    --card-bg: #1e293b;
+    --border-color: #334155;
+    --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* --- CORE STYLES --- */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: all 0.4s ease;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  /* --- GLASSMORPHISM NAVBAR --- */
+  .navbar {
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px); /* Efek blur di belakang nav */
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: var(--primary-color);
+  }
+
+  /* --- LAYOUT & SECTION --- */
+  .container, .content {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.025em;
+  }
+
+  h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+  /* --- PROJECT CARDS REFINED --- */
+  .project {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+  }
+
+  .project h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+
+  /* --- FLOATING DARK MODE BUTTON --- */
+  .dark-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* --- LIST STYLING --- */
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }/* --- FOOTER STYLES --- */
+  .footer {
+    margin-top: 50px;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--nav-bg); /* Mengikuti warna navbar */
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+
+  .footer-content p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .social-links a {
+    color: var(--text-color); /* OTOMATIS BERUBAH: Putih di Dark, Hitam di Light */
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  /* Efek Hover: Ikon akan berubah warna ke warna aksen saat disentuh */
+  .social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+  }
+
+  /* Responsif untuk layar kecil */
+  @media (max-width: 600px) {
+    .social-links {
+      gap: 15px;
+    }
+  }
+  .fa-instagram:hover { color: #E1306C; }
+  .fa-github:hover { color: #333; }
