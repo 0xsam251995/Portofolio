@@ -359,4 +359,42 @@ body.dark .avatar-wrapper {
     font-size: 14px;
   }
 }
+/* --- EXTRA POLISH --- */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, var(--bg-color) 0%, var(--border-color) 100%);
+}
 
+.subtitle {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-top: -10px;
+}
+
+.section {
+  margin-bottom: 50px;
+  scroll-margin-top: 100px; /* Agar saat klik nav, judul tidak tertutup navbar */
+}
+
+.section h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+.skill-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  list-style-type: "✔ ";
+}
+
+/* Animasi Halus Saat Scroll */
+html {
+  scroll-behavior: smooth;
+}
