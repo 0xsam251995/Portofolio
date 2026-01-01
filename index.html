@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Portfolio Pemula | Samsul Arifin</title>
+  <title>Portfolio | Samsul Arifin</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css" />
   
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
       <span class="logo">Samsul</span>
@@ -29,119 +27,118 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <div class="container">
-    <h1>Halo, Saya Pemula</h1>
-    <p>Saya sedang belajar membuat website dan produk digital sederhana.</p>
-  </div>
-
-  <header>
-    <div class="avatar-wrapper">
-  <img src="assets/avatar.jpg" alt="Avatar Samsul" class="avatar">
-</div>
-
-    <h1>Samsul Arifin</h1>
-    <p>Junior Web Developer | Portofolio</p>
+  <header class="hero-section">
+    <div class="container">
+      <div class="avatar-wrapper">
+        <img src="assets/avatar.jpg" alt="Avatar Samsul" class="avatar">
+      </div>
+      <h1>Halo, Saya Samsul Arifin</h1>
+      <p class="subtitle">Junior Web Developer & Digital Creator</p>
+      <p>Saya sedang belajar membangun website dan produk digital yang fungsional dan estetis.</p>
+    </div>
   </header>
 
-  <!-- DARK MODE BUTTON -->
-  <button id="toggle-dark" class="dark-btn">🌙 Dark</button>
-
-  <!-- CONTENT -->
-  <section id="project" class="section">
-    <h2><i class="fas fa-code"></i> Proyek Terkini</h2>
+  <main class="content-wrapper">
     
-    <div class="projects-grid">
-      
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250/4f46e5/ffffff?text=Project+1" alt="Website Portfolio Pribadi" class="project-image">
-        <div class="card-content">
-          <h3>Website Portfolio Pribadi</h3>
-          <p>Website satu halaman ini dibangun dengan HTML dan CSS, dilengkapi dengan fitur dark mode dan desain responsif.</p>
-          <div class="project-tags">
-            <span>#HTML</span>
-            <span>#CSS</span>
-            <span>#Responsif</span>
+    <section id="about" class="section">
+      <div class="container">
+        <h2><i class="fas fa-user"></i> Tentang Saya</h2>
+        <p>Saya adalah seorang pemula yang antusias dalam dunia web development, fokus pada HTML, CSS, dan desain antarmuka sederhana.</p>
+        
+        <h3 id="skill">Keahlian</h3>
+        <ul class="skill-tags">
+          <li><i class="fab fa-html5"></i> HTML Dasar</li>
+          <li><i class="fab fa-css3-alt"></i> CSS Layouting</li>
+          <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+          <li><i class="fas fa-lightbulb"></i> Notion Template</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="project" class="section">
+      <div class="container">
+        <h2><i class="fas fa-code"></i> Galeri Proyek</h2>
+        <div class="projects-grid">
+          
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x250/4f46e5/ffffff?text=Portfolio+v1" alt="Proyek 1" class="project-image">
+            <div class="card-content">
+              <h3>Portfolio Pribadi</h3>
+              <p>Website portofolio statis dengan fitur Dark Mode menggunakan HTML & CSS.</p>
+              <div class="project-tags">
+                <span>#HTML</span><span>#CSS</span><span>#JS</span>
+              </div>
+              <a href="#" class="btn-primary">Lihat Detail</a>
+            </div>
           </div>
-          <a href="https://0xsam251995.github.io/Portofolio/" target="_blank" class="btn-primary">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x250/22d3ee/ffffff?text=Notion+Setup" alt="Proyek 2" class="project-image">
+            <div class="card-content">
+              <h3>Manajemen Tugas</h3>
+              <p>Sistem manajemen produktivitas berbasis Notion untuk mahasiswa.</p>
+              <div class="project-tags">
+                <span>#Notion</span><span>#Productivity</span>
+              </div>
+              <a href="#" class="btn-primary">Buka Template</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x250/a78bfa/ffffff?text=UI+Design" alt="Proyek 3" class="project-image">
+            <div class="card-content">
+              <h3>Landing Page UI</h3>
+              <p>Eksperimen desain antarmuka untuk produk digital sederhana.</p>
+              <div class="project-tags">
+                <span>#Design</span><span>#UIUX</span>
+              </div>
+              <a href="#" class="btn-primary">Lihat Demo</a>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250/22d3ee/ffffff?text=Project+2" alt="Template Manajemen Kerja" class="project-image">
-        <div class="card-content">
-          <h3>Template Manajemen Kerja</h3>
-          <p>Template sederhana untuk manajemen tugas dan proyek pribadi, dibuat menggunakan fitur-fitur dasar Notion.</p>
-          <div class="project-tags">
-            <span>#Notion</span>
-            <span>#Produktivitas</span>
-          </div>
-          <a href="https://www.notion.so/contoh-template-kerja" target="_blank" class="btn-primary">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <h2><i class="fas fa-envelope"></i> Mari Terhubung</h2>
+        <p>Email: <strong>25121995samsul@gmail.com</strong></p>
+        <div class="social-links">
+          <a href="https://github.com/0xsam251995" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/samsul_guard" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
+    </section>
 
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250/a78bfa/ffffff?text=Project+3" alt="Landing Page Produk Digital" class="project-image">
-        <div class="card-content">
-          <h3>Landing Page Produk Digital</h3>
-          <p>Desain landing page modern untuk promosi produk digital, fokus pada konversi dan pengalaman pengguna.</p>
-          <div class="project-tags">
-            <span>#HTML</span>
-            <span>#CSS</span>
-            <span>#UI/UX</span>
-          </div>
-          <a href="#" target="_blank" class="btn-primary">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      
-    </div> </section>
-
-    <h2 id="contact">Kontak</h2>
-    <p>Email: 25121995samsul@gmail.com</p>
-  </section>
+  </main>
 
   <footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Samsul Arifin. Dibuat dengan ❤️</p>
-    <div class="social-links">
-      <a href="https://github.com/0xsam251995" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://instagram.com/samsul_guard" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com/in/samsul arifin" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:25121995samsul@gmail.com" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </div>
-</footer>
+    <p>&copy; 2025 Samsul Arifin. Dibuat dengan ❤️ di Indonesia</p>
+  </footer>
 
-  <!-- SCRIPT HARUS DI SINI -->
+  <button id="toggle-dark" class="dark-btn"><i class="fas fa-moon"></i> Dark</button>
+
   <script>
     const btn = document.getElementById("toggle-dark");
+    const icon = btn.querySelector("i");
 
     btn.addEventListener("click", () => {
       document.body.classList.toggle("dark");
-
       if (document.body.classList.contains("dark")) {
         localStorage.setItem("theme", "dark");
-        btn.textContent = "☀️ Light";
+        btn.innerHTML = '<i class="fas fa-sun"></i> Light';
       } else {
         localStorage.setItem("theme", "light");
-        btn.textContent = "🌙 Dark";
+        btn.innerHTML = '<i class="fas fa-moon"></i> Dark';
       }
     });
 
-    // Load saved theme
     if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark");
-      btn.textContent = "☀️ Light";
+      btn.innerHTML = '<i class="fas fa-sun"></i> Light';
     }
   </script>
-
 </body>
 </html>
