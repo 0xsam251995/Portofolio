@@ -63,10 +63,23 @@ body {
 .nav-links a:hover { color: var(--primary-color); }
 
 /* --- HERO --- */
+/* --- HERO --- */
 .hero-section {
-  text-align: center;
-  padding: 80px 0;
-  background: linear-gradient(to bottom, transparent, var(--border-color));
+    text-align: center;
+    padding: 100px 0; /* Memberi ruang agar background terlihat luas */
+    
+    /* Gunakan ../ untuk keluar dari folder css, lalu masuk ke assets/images */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../assets/nature-bg.jpg') no-repeat center center;
+    
+    background-size: cover;       /* Gambar menutupi seluruh area */
+    background-attachment: fixed;  /* Efek statis yang keren saat di-scroll */
+    min-height: 80vh;              /* Tinggi minimal area hero */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;                  /* Warna teks jadi putih agar terbaca */
 }
 
 .avatar-wrapper {
