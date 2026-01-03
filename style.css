@@ -63,37 +63,40 @@ body {
 .nav-links a:hover { color: var(--primary-color); }
 
 /* --- HERO --- */
-/* --- HERO --- */
 .hero-section {
     text-align: center;
-    padding: 100px 0; /* Memberi ruang agar background terlihat luas */
-    
-  .hero-section {
+    padding: 100px 0;
+    /* Pastikan jalur url sesuai dengan lokasi file di GitHub kamu */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('assets/nature-bg.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* Efek parallax agar lebih mewah */
-    min-height: 100vh;
-}
-    background-size: cover;       /* Gambar menutupi seluruh area */
-    background-attachment: fixed;  /* Efek statis yang keren saat di-scroll */
-    min-height: 80vh;              /* Tinggi minimal area hero */
+    background-attachment: fixed; /* Memberikan efek parallax yang profesional */
+    min-height: 100vh;           /* Background memenuhi satu layar penuh */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;                  /* Warna teks jadi putih agar terbaca */
+    color: white;                /* Teks putih agar kontras dengan background */
 }
 
 .avatar-wrapper {
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  padding: 5px;
-  background: linear-gradient(135deg, #4f46e5, #22d3ee);
-  animation: float 4s ease-in-out infinite;
-  position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, var(--primary-color), #22d3ee);
+    animation: float 4s ease-in-out infinite;
+    position: relative;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+}
+
+.avatar { 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 4px solid var(--card-bg); 
 }
 
 .avatar { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--card-bg); }
