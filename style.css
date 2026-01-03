@@ -68,10 +68,13 @@ body {
     text-align: center;
     padding: 100px 0; /* Memberi ruang agar background terlihat luas */
     
-    /* Gunakan ../ untuk keluar dari folder css, lalu masuk ke assets/images */
-background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-            url('assets/nature-bg.jpg') no-repeat center center;
-    
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('assets/nature-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Efek parallax agar lebih mewah */
+    min-height: 100vh;
+}
     background-size: cover;       /* Gambar menutupi seluruh area */
     background-attachment: fixed;  /* Efek statis yang keren saat di-scroll */
     min-height: 80vh;              /* Tinggi minimal area hero */
