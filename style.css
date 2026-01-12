@@ -66,7 +66,7 @@ body {
     padding: 100px 0;
     /* Gunakan ../ untuk keluar dari folder css/ menuju assets/ */
     background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
-                url('../assets/nature-bg.jpg') no-repeat center center;
+                url('assets/nature-bg.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
