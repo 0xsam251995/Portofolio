@@ -205,3 +205,36 @@ h2 { font-size: 2rem; margin-bottom: 30px; display: flex; align-items: center; g
   h1 { font-size: 2rem; }
   .section { padding: 50px 0; }
 }
+
+/* --- AI SERVICES CUSTOM STYLES --- */
+#services h2 i {
+    color: #22d3ee; /* Warna Cyan untuk kesan futuristik AI */
+    filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.6));
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* Efek Hover Khusus Jasa AI */
+.project-card:has(.fa-robot):hover, 
+.project-card:has(.fa-shield-alt):hover {
+    border-color: #22d3ee;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+/* Badge Keamanan (VirusTotal Style) */
+.security-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
